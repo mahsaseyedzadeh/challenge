@@ -1,0 +1,50 @@
+@import "./variables.module.scss";
+
+@mixin unStyled-button {
+  background: #ffffff;
+  border: 1px solid $lightest-gray-color;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+@mixin unStyled-list {
+  padding-right: unset;
+  list-style: none;
+
+}
+
+@mixin h1 {
+  font-family: Dana, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 150%;
+}
+@mixin h2 {
+  font-family: Dana, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 155%;
+}
+@mixin h3 {
+  font-family: Dana, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 180%;
+}
+@mixin h4 {
+  font-family: Dana, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+}
+
+

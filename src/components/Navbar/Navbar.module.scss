@@ -1,0 +1,47 @@
+@import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+.navBar{
+  background-color: $gray-bg;
+  padding: $gutter 0;
+  .navBarWrapper{
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    align-items: center;
+    font-size: $fz-5;
+    line-height: 32px;
+
+    @media screen and (min-width:$medium-size){
+      font-size: $fz-4;
+    }
+    .logo{
+      color: $dark-gray-color;
+      @media screen and (min-width:$medium-size){
+        font-weight: 600;
+      }
+    }
+    .authenticationBox{
+      color: $dark-gray-color;
+      display: flex;
+      gap: $gutter;
+      @media screen and (min-width:$medium-size){
+        font-weight: 600;
+      }
+      .link{
+        padding: 0 $gutter;
+        &:last-child {
+          background-color: $primary;
+          border-radius: $border-radius;
+          color: #fff;
+        }
+      }
+
+
+    }
+    .navbarItems{
+      @include unStyled-list;
+      display: flex;
+      gap: $gutter;
+    }
+  }
+}
