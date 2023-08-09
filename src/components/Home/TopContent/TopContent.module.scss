@@ -1,0 +1,94 @@
+@import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+
+.header{
+  font-size: $fz-2;
+  line-height: 32px;
+  color: $dark-gray-color;
+  padding: $gutter 0;
+}
+.text{
+  color: $medium-gray-color;
+  font-size: $fz-5;
+  line-height: 20px;
+}
+.buttonGroup{
+  display: flex;
+  gap: $gutter;
+  align-items: center;
+  padding: $gutter 0;
+  button{
+    @include unStyled-button;
+    background-color: $primary;
+    color: #fff;
+    padding: 0 $gutter;
+  }
+  a{
+    text-decoration: underline;
+    color: $primary;
+    line-height: 20px;
+  }
+}
+.badgeRow{
+  display: flex;
+  gap: $gutter;
+  align-items: center;
+  padding: $gutter 0;
+  font-size: $fz-6;
+  color: $medium-gray-color;
+  div{
+    display: block;
+    position: relative;
+    padding-left: $gutter;
+    align-items: center;
+    &:before{
+      content: ' ';
+      background-image: url("/images/Checkmark.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 14px!important;
+      height: 14px!important;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+}
+.contentWrapper{
+  background-color: $gray-bg;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  @include container;
+}
+.col{
+  width: 100%;
+  @media screen and (min-width: $medium-size){
+    width: 50%;
+
+  }
+}
+.imageWrapper{
+   width: 100%;
+   height: 400px;
+   margin: 0 auto;
+   display: block;
+   position: relative;
+   z-index: 1000;
+   @media screen and (min-width: $medium-size){
+     height: 550px;
+   }
+   .image{
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     object-fit: contain;
+
+   }
+
+ }

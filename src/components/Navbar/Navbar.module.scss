@@ -10,12 +10,14 @@
     align-items: center;
     font-size: $fz-5;
     line-height: 32px;
+    @include container;
 
     @media screen and (min-width:$medium-size){
       font-size: $fz-4;
     }
     .logo{
       color: $dark-gray-color;
+      font-size: $fz-4;
       @media screen and (min-width:$medium-size){
         font-weight: 600;
       }

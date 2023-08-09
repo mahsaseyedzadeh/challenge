@@ -95,8 +95,55 @@ a {
   }
 }
 .container{
-  max-width: 1660px;
-  margin: 0 auto;
-  padding: 0 $gutter;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100% ;
 
+  @media screen and (min-width: $small-size) {
+    max-width: 1336px;
+  }
+}
+
+$columns: 12;
+$gap: $gutter;
+$breakpoints: (
+  xs: 480px,
+  sm: 768px,
+  md: 960px,
+  lg: 1170px,
+  xl: 1280px
+);
+
+@mixin create-selectors($breakpoint: null) {
+  $infix: if($breakpoint == null, '', '-#{$breakpoint}');
+
+  @for $i from 1 through $columns {
+    .col#{$infix}-#{$i} {
+      grid-column-end: span $i;
+    }
+    .col-offset#{$infix}-#{$i} {
+      grid-column-start: $i + 1;
+    }
+    .row#{$infix}-#{$i} {
+      grid-row-end: span $i;
+    }
+    .row-offset#{$infix}-#{$i} {
+      grid-row-start: $i + 1;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-gap: $gap;
+  gap: $gap;
+}
+
+@include create-selectors;
+
+@each $breakpoint, $width in $breakpoints {
+  @media (min-width: $width) {
+    @include create-selectors($breakpoint);
+  }
 }

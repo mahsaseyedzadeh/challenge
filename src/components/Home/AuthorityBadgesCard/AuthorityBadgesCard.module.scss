@@ -1,0 +1,34 @@
+@import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+.card{
+  .imageWrapper{
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+    padding-bottom: $doubleGutter;
+    @media screen and (min-width: $medium-size){
+      height: 30px;
+    }
+    .image{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+    }
+  }
+  h4{
+    color: $dark-gray-color;
+    font-size: $fz-5;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  p{
+    color: $medium-gray-color;
+    font-size: $fz-6;
+    font-weight: 500;
+    line-height: 22px;
+
+  }
+}

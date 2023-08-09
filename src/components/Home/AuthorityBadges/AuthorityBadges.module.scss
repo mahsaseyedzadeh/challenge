@@ -1,0 +1,39 @@
+@import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+
+
+.wrapper{
+  @include container;
+  padding-bottom: $doubleGutter;
+  .subject{
+    color: $primary;
+    font-size: $fz-6;
+    font-weight: 600;
+    display: block;
+    line-height: 32px;
+  }
+  h3{
+    color: $dark-gray-color;
+    width: 100%;
+    padding-bottom: $gutter;
+    line-height: 28px;
+    font-size: $fz-4;
+    @media screen and (min-width: $medium-size) {
+      width: 300px;
+      font-size: $fz-3;
+    }
+  }
+}
+
+.badgesWrapper{
+  display: flex;
+  gap: $gutter;
+  text-align: left;
+  flex-direction: column;
+  @media screen and (min-width: $medium-size){
+    flex-direction: row;
+    gap: $doubleGutter;
+
+
+  }
+}

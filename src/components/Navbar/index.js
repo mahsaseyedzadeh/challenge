@@ -4,10 +4,10 @@ import Link from "next/link";
  const Navbar = () => {
   return (
     <nav className={styles.navBar}>
-      <div className={`${styles.navBarWrapper} container`}>
-        <div className={styles.logo}>
+      <div className={`${styles.navBarWrapper}`}>
+        <h1 className={styles.logo}>
           Fiber
-        </div>
+        </h1>
         <ul className={styles.navbarItems}>
           <li>Community</li>
           <li>Pricing</li>
