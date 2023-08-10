@@ -12,10 +12,15 @@
       flex:1;
     }
     .rightSide{
-      background-color: $primary;
-      padding:$gutter;
-      flex:1;
-      align-items: center;
+      display: none;
+      @media screen and (min-width:$small-size){
+        display: block;
+        background-color: $primary;
+        padding:$gutter;
+        flex:1;
+        align-items: center;
+      }
+
 
     }
   }

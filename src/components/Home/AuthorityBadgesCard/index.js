@@ -4,7 +4,6 @@ import {assets} from "@/components/Helper";
 import styles from "./AuthorityBadgesCard.module.scss";
 
 const AuthorityBadgesCard = ({data}) => {
-  console.log(data)
   return(
     <div className={styles.card}>
       <div className={styles.imageWrapper}>

@@ -23,6 +23,7 @@ const HocCheckBoxWrapper = InputComponent => {
 
 
     const onChange = event => {
+      console.log(event)
       setFieldValue(props.name, event.target.value)
     };
 

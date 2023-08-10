@@ -3,19 +3,17 @@ import RenderErrors from "../RenderErrors";
 import HocCheckBoxWrapper from "@/components/Form/HocCheckBoxWrapper";
 
 
-
 const HocCheckBox = (props) => {
   return (
     <div className={`${styles.wrapper} ${props.classes ? props.classes : ""}`}>
       <input
         name={props.name}
-        onChangeHandler={props.onChange}
+        onChange={props.onChange}
         value={props.value}
         label={props.label}
         type={"checkbox"}
       />
-      {props.label? <label className={props.required ? styles.requiredBadge : ''}>{props.label}</label>:null}
-
+      {props.label && <label>{props.label}</label>}
       {props.required ? <RenderErrors name={props.name} errors={props.errors}/> : null}
     </div>
   );

@@ -5,6 +5,7 @@ import Link from "next/link";
   return (
     <nav className={styles.navBar}>
       <div className={`${styles.navBarWrapper}`}>
+        <button  className={styles.mobileMenu} aria-label={'hamberger menu'} onClick={()=>{}}/>
         <h2 className={styles.logo}>
           Fiber
         </h2>

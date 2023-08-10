@@ -1,11 +1,15 @@
 @import "src/styles/variables.module";
 @import "src/styles/mixin.module";
 .imageCard{
-  width: 600px;
-  height: 500px;
+  width: 400px;
+  height: 300px;
   display: block;
   position: relative;
   margin-bottom: $doubleGutter;
+  @media screen and (min-width: $medium-size){
+    width: 600px;
+    height: 500px;
+  }
 
 }
 .wrapper{

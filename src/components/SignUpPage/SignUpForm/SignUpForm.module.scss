@@ -1,12 +1,15 @@
 @import "src/styles/variables.module";
 @import "src/styles/mixin.module";
 .formWrapper{
+  max-width: 100%;
   padding:$gutter;
-  max-width: 80%;
   margin: 0 auto;
   height: 100%;
   display: flex;
   align-items: center;
+  @media screen and (min-width: $small-size) {
+    max-width: 80%;
+  }
   h2{
     color: $dark-gray-color;
     font-weight: 600;

@@ -9,7 +9,7 @@ const CommentCard = ({comment}) => {
      <div className={styles.card}>
        <div className={styles.cardHeader}>
          <div className={styles.avatar}>
-           <Image width={45} height={45} src={assets(comment.avatar)}/>
+           <Image alt={'comments'} width={45} height={45} src={assets(comment.avatar)}/>
          </div>
          <div className={styles.userInfo}>
            <span>

@@ -23,27 +23,45 @@
       }
     }
     .authenticationBox{
-      color: $dark-gray-color;
-      display: flex;
-      gap: $gutter;
-      @media screen and (min-width:$medium-size){
-        font-weight: 600;
-      }
-      .link{
-        padding: 0 $gutter;
-        &:last-child {
-          background-color: $primary;
-          border-radius: $border-radius;
-          color: #fff;
+      display: none;
+      @media screen and (min-width: $small-size){
+        color: $dark-gray-color;
+        display: flex;
+        gap: $gutter;
+        @media screen and (min-width:$medium-size){
+          font-weight: 600;
+        }
+        .link{
+          padding: 0 $gutter;
+          &:last-child {
+            background-color: $primary;
+            border-radius: $border-radius;
+            color: #fff;
+          }
         }
       }
-
-
     }
     .navbarItems{
-      @include unStyled-list;
-      display: flex;
-      gap: $gutter;
+      display: none;
+      @media screen and (min-width: $small-size){
+        @include unStyled-list;
+        display: flex;
+        gap: $gutter;
+      }
+
     }
   }
+}
+.mobileMenu{
+  display: block;
+  background-image: url("/images/HamburgerMenu.svg");
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border:none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (min-width: $small-size){
+  display: none;
+}
 }

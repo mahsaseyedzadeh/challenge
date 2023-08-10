@@ -7,7 +7,7 @@ const HocTextFiled = (props) => {
 
     return (
         <div className={`${styles.wrapper} ${props.classes? props.classes : ""}`}  >
-            {props.label? <label className={props.required ? styles.requiredBadge : ''}>{props.label}</label>:null}
+            {props.label &&  <label>{props.label}</label>}
             <input
                 name={props.name}
                 type={props.type}

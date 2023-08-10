@@ -7,7 +7,7 @@ const SwiperCard = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.imageCard}>
-        <Image fill src={assets('/images/SignUpImage.png')}/>
+        <Image alt={"Slider pic"} fill src={assets('/images/SignUpImage.png')}/>
       </div>
       <div className={styles.descriptionBox}>
         <h3>
