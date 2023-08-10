@@ -1,0 +1,30 @@
+@import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+.formWrapper{
+  padding:$gutter;
+  max-width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  h2{
+    color: $dark-gray-color;
+    font-weight: 600;
+    font-size: $fz-3;
+    line-height: 40px;
+    padding-bottom: $doubleGutter;
+  }
+  span{
+    display: block;
+     color: $dark-gray-color;
+     font-weight: 600;
+     font-size: $fz-2;
+    padding-bottom: $doubleGutter;
+  }
+  .formStage{
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;
+  }
+
+}

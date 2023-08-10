@@ -17,7 +17,7 @@ import Link from "next/link";
           <Link href={'/'} className={styles.link}>
             sign in
           </Link>
-          <Link href={'/'} className={styles.link}>
+          <Link href={'/signup'} className={styles.link}>
             sign up
           </Link>
         </div>

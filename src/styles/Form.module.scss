@@ -1,0 +1,21 @@
+@import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+.form{
+  padding: $gutter 0;
+}
+
+.formFooter{
+  button{
+    background-color: $primary;
+    font-weight: 600;
+    font-size: $fz-5;
+    text-align: center;
+    border: none;
+    border-radius: $border-radius;
+    line-height: 40px;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+
+  }
+}

@@ -1,0 +1,27 @@
+@import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+.imageCard{
+  width: 600px;
+  height: 500px;
+  display: block;
+  position: relative;
+  margin-bottom: $doubleGutter;
+
+}
+.wrapper{
+  margin: 0 auto;
+}
+.descriptionBox{
+  color: #fff;
+  text-align: center;
+  h3{
+    font-size: $fz-3;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  p{
+    font-size: $fz-5;
+    font-weight: 500;
+    line-height: 26px;
+  }
+}

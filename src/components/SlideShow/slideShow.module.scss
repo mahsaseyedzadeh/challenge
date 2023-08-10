@@ -1,0 +1,13 @@
+@import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+.wrapper{
+  margin: 0 auto;
+  width: 600px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  .stage{
+    display: flex;
+    align-items: center;
+  }
+}

@@ -58,3 +58,6 @@
   }
 }
 
+@mixin error{
+  color: $red-color;
+}

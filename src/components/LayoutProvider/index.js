@@ -9,9 +9,9 @@ const LayoutProvider = ({children}) => {
 
   return (
     <>
-      {pathname !== "/login" && <Navbar/>}
+      {pathname !== "/signup" && <Navbar/>}
         {children}
-      {pathname !== "/login" && <Footer/>}
+      {pathname !== "/signup" && <Footer/>}
 
     </>
   )

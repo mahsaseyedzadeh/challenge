@@ -11,10 +11,15 @@
   "dependencies": {
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.13",
+    "formik": "^2.4.3",
+    "lodash": "^4.17.21",
     "next": "13.4.13",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "sweetalert": "^2.1.2",
+    "swiper": "^10.1.0",
+    "validate.js": "^0.13.1"
   },
   "devDependencies": {
     "sass": "^1.64.2"

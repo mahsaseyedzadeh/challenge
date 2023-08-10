@@ -1,0 +1,29 @@
+@import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+.wrapper{
+  margin-bottom: $gutter;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: $halfGutter;
+  flex-wrap: wrap;
+  label{
+    display: block;
+    font-size: $fz-5;
+    margin-bottom: $halfGutter;
+    font-weight: 600;
+  }
+  input{
+    width: 18px;
+    height: 18px;
+  }
+}
+.errorMessage{
+  margin: unset;
+  padding-right: unset;
+  list-style: none;
+  width: 100%;
+  .error{
+    @include error;
+  }
+}
