@@ -1,0 +1,17 @@
+@import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+.wrapper{
+  @include unStyled-list;
+  li{
+    line-height: 20px;
+    font-size: $fz-5;
+    color: $medium-gray-color;
+  }
+  .header{
+    color: $dark-gray-color;
+    font-size: $fz-4;
+    line-height: 32px;
+    font-weight: 600;
+  }
+
+}

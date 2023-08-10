@@ -1,0 +1,18 @@
+@import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+.Wrapper{
+  @include container;
+  padding: $gutter 0 $tripleGutter 0 ;
+  .carousel{
+    overflow-x: auto;
+    padding: $gutter 0;
+    .stage{
+      display: flex;
+      width: auto;
+      gap: $doubleGutter;
+      @media screen and (min-width: $small-size){
+        gap: $gutter;
+      }
+    }
+  }
+}

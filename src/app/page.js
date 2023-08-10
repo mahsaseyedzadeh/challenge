@@ -1,10 +1,15 @@
-import styles from '../styles/page.module.css'
-import HomePage from '../components/Home'
+import TopContent from "@/components/Home/TopContent";
+import AuthorityBadges from "@/components/Home/AuthorityBadges";
+import Template from "@/components/Home/Template";
+import Comments from "@/components/Home/Comments";
 
 export default function Home() {
   return (
     <main >
-      <HomePage/>
+      <TopContent/>
+      <AuthorityBadges/>
+      <Template/>
+      <Comments/>
     </main>
   )
 }

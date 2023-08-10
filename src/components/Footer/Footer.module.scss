@@ -1,6 +1,43 @@
 @import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+
 .footer{
-  height: 200px;
   background-color: $gray-bg;
+  padding: $gutter;
+  .footerStage{
+    display: flex;
+    gap: $gutter;
+    flex-wrap: wrap;
+    @media screen and (min-width: $small-size){
+      flex-wrap: unset;
+    }
+    @include container;
+    .rightSide{
+      display: flex;
+      flex-direction: row;
+      gap: $gutter;
+    }
+    .leftSide{
+      h1{
+        color: $dark-gray-color;
+        font-size: $fz-4;
+        line-height: 32px;
+        font-weight: 600;
+
+      }
+      p{
+        color: $medium-gray-color;
+        font-size: $fz-5;
+        line-height: 24px;
+        padding-bottom: $gutter;
+      }
+      span{
+        display: block;
+        color: $medium-gray-color;
+        font-size: $fz-5;
+        line-height: 24px;
+      }
+    }
+  }
 
 }

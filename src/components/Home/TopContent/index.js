@@ -4,7 +4,6 @@ import Rating from "@/components/Rating";
 import styles from './TopContent.module.scss';
 import Image from "next/image";
 import {assets} from "@/components/Helper";
-
 const TopContent = () => {
   return(
     <section className={styles.contentWrapper}>

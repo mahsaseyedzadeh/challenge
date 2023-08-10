@@ -5,9 +5,9 @@ import Link from "next/link";
   return (
     <nav className={styles.navBar}>
       <div className={`${styles.navBarWrapper}`}>
-        <h1 className={styles.logo}>
+        <h2 className={styles.logo}>
           Fiber
-        </h1>
+        </h2>
         <ul className={styles.navbarItems}>
           <li>Community</li>
           <li>Pricing</li>

@@ -1,0 +1,60 @@
+@import "src/styles/variables.module";
+@import "src/styles/mixin.module";
+.wrapper{
+  @include container;
+  background-color: $primary;
+  padding: 0 $gutter ;
+  border-radius: $border-radius;
+  display: flex;
+  gap: $gutter;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: $gutter;
+  @media screen and (min-width: $small-size){
+    padding: $doubleGutter $gutter 0 $gutter;
+    flex-direction: row;
+
+  }
+}
+.imageWrapper{
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 1000;
+  @media screen and (min-width: $medium-size){
+    height: 450px;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+  }
+}
+.content{
+  color: #fff;
+  padding: $gutter;
+  h3{
+    font-size: $fz-3;
+    line-height: 40px;
+    @media screen and (min-width: $medium-size) {
+      font-size: $fz-2;
+    }
+  }
+  p{
+    font-size: $fz-5;
+    line-height: 32px;
+    color: $lightest-gray-color;
+  }
+  button{
+    @include unStyled-button;
+    padding: 0 $gutter;
+    color: $primary;
+    font-weight: 600;
+    margin: $gutter 0;
+
+  }
+}
