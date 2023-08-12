@@ -2,16 +2,14 @@
 @import "src/styles/mixin.module";
 .navBar{
   background-color: $gray-bg;
-  padding: $gutter 0;
   .navBarWrapper{
     display: flex;
     justify-content: space-between;
-    min-height: 50px;
+    min-height: 40px;
     align-items: center;
     font-size: $fz-5;
     line-height: 32px;
     @include container;
-
     @media screen and (min-width:$medium-size){
       font-size: $fz-4;
     }
@@ -23,16 +21,20 @@
       }
     }
     .authenticationBox{
-      display: none;
-      @media screen and (min-width: $small-size){
-        color: $dark-gray-color;
-        display: flex;
-        gap: $gutter;
+      color: $dark-gray-color;
+      transition: 0.3s;
+      padding: 0 $gutter;
+      @media screen and (min-width:$medium-size){
+        font-weight: 600;
+        padding: 0 ;
+
+      }
+      .link{
+        display: block;
         @media screen and (min-width:$medium-size){
-          font-weight: 600;
-        }
-        .link{
+          display: inline-block;
           padding: 0 $gutter;
+
           &:last-child {
             background-color: $primary;
             border-radius: $border-radius;
@@ -42,16 +44,25 @@
       }
     }
     .navbarItems{
-      display: none;
+      @include unStyled-list;
+      padding: $gutter;
+      transition: 0.3s;
       @media screen and (min-width: $small-size){
-        @include unStyled-list;
-        display: flex;
-        gap: $gutter;
-      }
+        flex:1 1;
+        text-align: center;
+        padding: unset;
 
+      }
+      li{
+        @media screen and (min-width: $small-size){
+          display: inline-block;
+          padding: 0 $gutter ;
+        }
+      }
     }
   }
 }
+
 .mobileMenu{
   display: block;
   background-image: url("/images/HamburgerMenu.svg");
@@ -64,4 +75,42 @@
   @media screen and (min-width: $small-size){
   display: none;
 }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: #FFf;
+  overflow-x: hidden;
+  transition: 0.5s;
+  &.openDrawer{
+    width: 70%;
+    padding: $gutter;
+    opacity: 1;
+  }
+  @media screen and (min-width: $small-size) {
+    position: unset;
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    height: auto;
+    justify-content: space-between;
+
+  }
+}
+.backDrop{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 98;
+  background-color: rgba(0, 0, 0, 0.2);
+  &.show{
+    display: block;
+  }
 }
