@@ -19,7 +19,6 @@ const Footer = () => {
         </div>
         <div className={styles.rightSide}>
           {FooterObj.map((item, index) => (
-            // console.log(item.title)
             <FooterList key={index} data={item}/>
             ))
           }

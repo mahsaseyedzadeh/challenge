@@ -12,7 +12,7 @@ const Template = () => {
         <p>
           Create an even more impressive portfolio by creating case studies for your projects. Simply follow our step-by-step guide.
         </p>
-        <button onClick={ () => { console.log("d"); } }>
+        <button onClick={ () => { console.log("redirect to url"); } }>
           Start Free Trial
         </button>
 

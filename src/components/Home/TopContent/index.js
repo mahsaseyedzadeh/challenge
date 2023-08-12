@@ -17,7 +17,7 @@ const TopContent = () => {
             With Fiber, you can setup your own personal portfolio in minutes with dozens of premade, beautiful templates.
           </p>
           <div className={styles.buttonGroup}>
-            <button onClick={()=>{console.log("5")}}>
+            <button onClick={()=>{console.log("redirect")}}>
               Start Free Trial
             </button>
             <Link href={'#'}>
@@ -44,8 +44,6 @@ const TopContent = () => {
           </div>
         </div>
       </div>
-
-
     </section>
   )
 }
