@@ -13,13 +13,21 @@ pnpm dev
 ```
 ### Installation
 rename .env.example to .env
+
 run npm install
+
 run npm run dev 
+
 
 ### Brief
 the website created by last version of next js
+
 use src directory 
+
 create login form using Hoc 
+
 use flexBox 
+
 responsive 
+
 
